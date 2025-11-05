@@ -1,18 +1,20 @@
-public // backend/src/main/java/com/example/ecomm/entity/User.java
-package com.example.ecomm.entity;
+package com.ecomm.entity;
 
-import jakarta.persistence.*;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import lombok.Data;
 
 @Entity
-@Table(name="users")
+@Data // generates getters, setters, toString, equals, hashcode
 public class User {
-  @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
-  private Long id;
-  private String username;
-  private String password;
-  private String role; // "USER" or "ADMIN"
-  // getters/setters
-}
- {
-    
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    private String username;
+    private String password;
+    private String role;
 }

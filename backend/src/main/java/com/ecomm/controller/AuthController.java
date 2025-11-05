@@ -1,4 +1,21 @@
-// backend/.../controller/AuthController.java
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.http.HttpStatus;
+import java.util.Map;
+import java.util.Base64;
+import jakarta.annotation.PostConstruct;
+import com.ecomm.entity.User;
+import com.ecomm.repository.UserRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+import java.util.Optional;
+
+ // replaces javax.annotation.PostConstruct
+
 @RestController
 @RequestMapping("/api/auth")
 public class AuthController {

@@ -1,0 +1,8 @@
+Product.class
+AuthController.class
+RepairRequestRepository.class
+com\ecomm\repository\UserRepository.class
+com\ecomm\EcommApplication.class
+RepairRequest.class
+com\ecomm\entity\User.class
+CartItem.class
